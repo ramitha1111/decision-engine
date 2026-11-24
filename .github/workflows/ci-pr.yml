@@ -1,6 +1,7 @@
 name: ci-pr
 
 on:
+  workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened]
   # The merge queue runs the same jobs on the PR combined with the latest main, so a PR doesn't
